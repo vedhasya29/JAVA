@@ -1,0 +1,40 @@
+class common{
+    static String PM= "Narendra Modi";
+    
+}
+class TN{
+    static String CM="Vijay";
+    static String state="Tamil Nadu";
+    String dis;
+    int no;
+    public void set_obj(String a,int b){
+        dis=a;
+        no=b;
+    }
+    public void display(){
+        System.out.println("PM:"+common.PM);
+        System.out.println("CM:"+CM);
+        System.out.println("State:"+state);
+        System.out.println("District:"+dis);
+        System.out.println("Population:"+no);
+    }
+    
+}     
+class AP{
+    static String CM="CB Naidu";
+    static String State="Andhra Pradesh";
+    String dis;
+    int no;
+    public void set_obj(String a,int b){
+        dis=a;
+        no=b;
+    }
+    public void display(){
+        System.out.println("PM:"+common.PM);
+        System.out.println("CM:"+CM);
+        System.out.println("State:"+State);
+        System.out.println("District:"+dis);
+        System.out.println("Population:"+no);
+    }
+    
+}
