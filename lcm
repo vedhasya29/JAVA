@@ -1,0 +1,25 @@
+public class Main {
+    public static void main(String[] args) {
+        int[]a={6,54,35,86,21};
+
+        int lcm=a[0];
+
+        for (int i=1; i<a.length; i++) {
+            lcm =san(lcm, a[i]);
+        }
+        System.out.println("The LCM is " + lcm);
+    }
+    public static int san(int a, int b) {
+        int big = Math.max(a, b);
+        int small = Math.min(a, b);
+        int s = big;
+
+        while (true) {
+            if (big % small == 0)
+                break;
+                big = big + s;
+        }
+
+        return big;
+    }
+}
